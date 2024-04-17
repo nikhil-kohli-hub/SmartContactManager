@@ -6,8 +6,28 @@
 </head>
 <body>
 	<section>
-		<h1>This is your private dashboard</h1>
-		<h2>We are building spring boot project</h2>
+		<div class="container">
+			<div class="card">
+				<div class="card-body my-5">
+						<div class="container text-center mt-3">
+						<img src="" style="height: 200px; width: 200px;" class="my_profile_picture" th:src="@{'/img/download.png'}" alt="profile photo" />
+				</div>
+				<h1 class="text-center mt-3 text-secondary font-italic font-weight-Light">
+					Start Adding your contact on cloud...
+				</h1><br>
+				
+				<a th:href="@{/user/add-contact}" style="margin-left: 43%;" class="btn btn-primary btn-block text-uppercase text-center">Add New Contact</a>
+
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(() =>{
+				$('.item').removeClass('active');
+				$('#home-link').addClass('active');
+			});
+		
+		</script>
 	</section>
 	
 </body>

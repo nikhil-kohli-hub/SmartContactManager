@@ -78,6 +78,7 @@ a{
 	height: 100%;
 	position: fixed;
 	padding-top: 45px;
+	z-index: 99999999999999999999999999;
 }
 
 .sidebar a{
@@ -112,7 +113,27 @@ a{
 	cursor: pointer;
 }
 
-.fa fa-plus{
-	margin-top: 15px;
+.fa-fa-plus{
+	margin-top: 200px;
 	
+}
+.my_profile_picture{
+	width:35px;
+	height: 35px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.search-result{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	display: none;
+}
+
+.active{
+	background: #009688 !important;
+	color: white !important;
 }
